@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO básico -->
+    <title>Evaluación técnica real para developers | DevSatori</title>
+    <meta name="description"
+        content="DevSatori es una plataforma para evaluar el desempeño técnico real de desarrolladores mediante retos prácticos como debugging y refactorización en un entorno AI-restricted." />
+    <meta name="keywords"
+        content="evaluación técnica developers, desempeño técnico real, plataforma para developers, pruebas técnicas, reclutamiento tech" />
+    <meta name="author" content="Tu Nombre" />
+
+    <!-- Open Graph básico -->
+    <meta property="og:title" content="DevSatori - Evaluación técnica real para developers" />
+    <meta property="og:description"
+        content="Plataforma orientada a medir habilidades técnicas reales mediante retos cercanos al trabajo diario." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <h1 class="logo">DevSatori</h1>
+            <nav>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#funciona">Cómo funciona</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Plataforma SaaS B2B</p>
+                    <h2>Evalúa el desempeño técnico real de tus developers</h2>
+                    <p class="hero-description">
+                        DevSatori permite medir habilidades técnicas mediante retos cercanos al trabajo diario,
+                        como debugging, refactorización y resolución de problemas técnicos en un entorno AI-restricted.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
+                        <a href="#funciona" class="btn btn-secondary">Ver cómo funciona</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <h3>Propuesta de valor</h3>
+                    <ul>
+                        <li>Evaluación basada en desempeño real</li>
+                        <li>Retos prácticos cercanos al trabajo diario</li>
+                        <li>Menor dependencia de IA en las evaluaciones</li>
+                        <li>Métricas claras por persona y equipo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section id="beneficios" class="section">
+            <div class="container">
+                <h2 class="section-title">Beneficios principales</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Mejora la contratación</h3>
+                        <p>Permite evaluar mejor a los candidatos con pruebas más cercanas al entorno real de trabajo.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Reduce el riesgo</h3>
+                        <p>Ayuda a evitar decisiones basadas solo en teoría o en resultados inflados por uso de IA.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Apoya la capacitación</h3>
+                        <p>Facilita detectar brechas técnicas y planificar procesos de formación más útiles.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CÓMO FUNCIONA -->
+        <section id="funciona" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Cómo funciona</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span>1</span>
+                        <h3>Configuras la evaluación</h3>
+                        <p>Se define una campaña con retos prácticos según el rol o necesidad técnica.</p>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <h3>El developer realiza los retos</h3>
+                        <p>La evaluación se desarrolla en un entorno controlado y orientado al trabajo real.</p>
+                    </div>
+                    <div class="step">
+                        <span>3</span>
+                        <h3>Obtienes métricas claras</h3>
+                        <p>Se generan resultados útiles para contratación, evaluación de desempeño y capacitación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section id="contacto" class="section">
+            <div class="container contact-grid">
+                <div>
+                    <h2 class="section-title">Solicita una demo</h2>
+                    <p class="contact-text">
+                        Déjanos tus datos y te contactaremos para mostrarte cómo funciona la plataforma.
+                    </p>
+
+                    <div class="metric-box">
+                        <h3>Leads captados en esta demo</h3>
+                        <p id="leadCount">0</p>
+                    </div>
+                </div>
+
+                <form id="leadForm" class="contact-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required />
+
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" required />
+
+                    <label for="cargo">Cargo</label>
+                    <input type="text" id="cargo" name="cargo" required />
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required />
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos tu interés..."></textarea>
+
+                    <button type="submit" class="btn btn-primary full-width">Enviar solicitud</button>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>DevSatori © 2026 | Landing page demostrativa para estrategia de marketing</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

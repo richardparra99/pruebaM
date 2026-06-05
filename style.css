@@ -1,0 +1,303 @@
+:root {
+    --bg: #0b1020;
+    --card: #151c33;
+    --card-2: #10172b;
+    --text: #f4f7fb;
+    --muted: #b8c2d9;
+    --primary: #49c6e5;
+    --primary-dark: #2aa4c3;
+    --border: #29314a;
+    --success: #4ade80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(11, 16, 32, 0.95);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.nav nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav nav a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    padding: 80px 0 50px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.hero h2 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-description {
+    color: var(--muted);
+    margin-bottom: 24px;
+    max-width: 650px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-card,
+.card,
+.step,
+.contact-form,
+.metric-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.hero-card h3 {
+    margin-bottom: 12px;
+}
+
+.hero-card ul {
+    padding-left: 18px;
+}
+
+.hero-card li {
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.section-alt {
+    background: var(--card-2);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.step span {
+    display: inline-block;
+    background: var(--primary);
+    color: #081018;
+    font-weight: bold;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 14px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--muted);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.contact-text {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.metric-box h3 {
+    margin-bottom: 10px;
+}
+
+.metric-box p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--success);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #0d1427;
+    color: var(--text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--primary);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #06111a;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.full-width {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.form-message {
+    min-height: 24px;
+    margin-top: 8px;
+    color: var(--success);
+    font-weight: bold;
+}
+
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 22px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+
+    .hero-content,
+    .cards,
+    .steps,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
